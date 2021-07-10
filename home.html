@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>PICT MUN 2020 </title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<div class="div1"><img src="logo.jpeg"  width="90px" height="90px">
+<h1>	PICT MUN 2020	
+<a href="home.html" class="button">HOME</a>
+<a href="about_us.html" class="button">ABOUT US</a>
+<a href="commitees.html" class="button">COMMITTEES</a>
+<a href="events.html" class="button">REGISTER</a>
+<a href="contact_us.html" class="button">CONTACT US</a>
+
+</h1>
+
+</div>
+
+<h2>THINK, DISCUSS, PROSPER </h2>
+
+<p class="word_split">
+  <span class="word1">JOIN</span>
+  <span class="word2">US,</span>
+  <span class="word3">CHANGE</span>
+<span class="word4">LIVES</span>
+</p>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 20, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "\tDays " + hours + "\tHours "
+  + minutes + "\tMinutes " + seconds + "\tSeconds ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+
+</html>
